@@ -3,7 +3,8 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 @Component({
  moduleId: module.id,
  selector: 'layout-header',
- templateUrl: 'header.component.html'
+ templateUrl: 'header.component.html',
+ styles: ['h2 { color: red; }']
 })
 export class HeaderComponent {
     constructor() {}
