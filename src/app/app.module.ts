@@ -5,7 +5,7 @@ import { AppComponent }  from './app.component';
 import { HeaderComponent } from './shared/layout/header.component';
 
 @NgModule({
- imports: [ 
+ imports: [
  BrowserModule
  ],
  declarations: [

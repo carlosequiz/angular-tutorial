@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
  moduleId: module.id,
@@ -6,7 +6,14 @@ import { Component } from '@angular/core';
  templateUrl: 'header.component.html'
 })
 export class HeaderComponent {
- constructor() {}
+    constructor() {}
 
- name: string = 'Angular2';
+    //name: string = 'Angular2';
+
+    @Input() name: string;
+    @Output() onNameChanged = new EventEmitter<string>();
+
+    changeName(newName: string) {
+        this.onNameChanged.emit(newName);
+    }
 }

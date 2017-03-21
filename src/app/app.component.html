@@ -1,3 +1,6 @@
-<layout-header></layout-header>
+<layout-header
+    [name]="name"
+    (onNameChanged)="setName($event)">
+</layout-header>
 
 Nested components rule!
